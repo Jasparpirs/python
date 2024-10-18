@@ -1,0 +1,25 @@
+#10.10.24 Jaspar
+#ülesanne6
+import turtle
+import math
+
+
+#Mata
+korgus = 4.4
+nurk= 53
+kaugus = korgus /math.tan (nurk)
+c= math.sqrt(korgus**2 + kaugus**2)
+print(kaugus)
+
+#Joonis
+kordaja=20
+turtle.fd(korgus*kordaja) 
+turtle.left(90)
+turtle.fd(korgus*kordaja)
+turtle.left(180-67)
+turtle.fd(c*kordaja)
+
+
+
+
+turtle.done
