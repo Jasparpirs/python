@@ -93,6 +93,11 @@ for _  in range(11):
     tehe = random.choice(tehted)
     if tehe=="+":
         print(f"{i} {tehe} {j} = {i*j}")
+        vastus = int(input("vastus: "))
+        if vastus==i+j:
+            print("õige")
+            punktid+=1
+        
     elif tehe=="+":
         print(f"{i} {tehe} {j} = {i*j}")
     elif tehe=="+":
