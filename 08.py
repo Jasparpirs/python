@@ -59,8 +59,9 @@ ladu = {
 
 valik = "piim"
 kogus = 10
-try:
-    if valik in ladu:
+
+
+if valik in ladu:
         if kogus <= ladu[valik]["kogus"]:
             #kleindi tsekk
             summa = kogus* ladu[valik]["hind"]
@@ -72,17 +73,15 @@ try:
         #laoseisu muutmine
         uus_kogus = ladu[valik]["kogus"] - kogus
         ladu[valik]["kogus"] = uus_kogus
-    else:
-           print("Meil ei ole sellist kogust!")
+   
+        print("Meil ei ole sellist kogust!")
 
-    try:
-    print("Seda toodet ei ole")
+try:
+        print("Seda toodet ei ole")
 
 
 
     
-
-
 
 except:
     print("Mingi jama")

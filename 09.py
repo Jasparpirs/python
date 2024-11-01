@@ -86,40 +86,86 @@ import random
 
 
 # Loo programm, mis loob suvalised tehted 1-100 arvudega.
-tehted = ['+','-','*','/']
-for _  in range(11):
-    i = random.randint(1,10)
-    j = random.randint(1,10)
-    tehe = random.choice(tehted)
-    if tehe=="+":
-        print(f"{i} {tehe} {j} = {i*j}")
-        vastus = int(input("vastus: "))
-        if vastus==i+j:
-            print("õige")
-            punktid+=1
+# tehted = ['+','-','*','/']
+# for _  in range(11):
+#     i = random.randint(1,10)
+#     j = random.randint(1,10)
+#     tehe = random.choice(tehted)
+#     if tehe=="+":
+#         print(f"{i} {tehe} {j} = {i*j}")
+#         vastus = int(input("vastus: "))
+#         if vastus==i+j:
+#             print("õige")
+#             punktid+=1
         
-    elif tehe=="+":
-        print(f"{i} {tehe} {j} = {i*j}")
-    elif tehe=="+":
-        print(f"{i} {tehe} {j} = {i*j}")
-    else:
-        print(f"{i} {tehe} {j} = {round(i/j,2)}")
+#     elif tehe=="+":
+#         print(f"{i} {tehe} {j} = {i*j}")
+#     elif tehe=="+":
+#         print(f"{i} {tehe} {j} = {i*j}")
+#     else:
+#         print(f"{i} {tehe} {j} = {round(i/j,2)}")
+
+
+#Sama sugused kujundid
 
 
 
 
 
+# Paariarvude summa
+even_nums = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 3, 32, 34, 36, 38]
+summa = 0
 
-# Kasuta tsükli puhul alakriipsu
-# kasuta suvalise tehte märgi jaoks loendit ja sealt suvalise märgi leidmiseks random.choice()
-# Näiteks:
-# 7 – 2=
-# 45 * 69=
-# 71 – 45=
-# 84 / 57=
-# 59 * 87=
-# 84 – 71=
-# 65 * 32=
-# 63 – 11=
-# 72 – 90=
-# 29 / 93=
+for i in even_nums:
+     if i % 2 != 0:  
+         break
+     summa += i 
+
+if summa > 0 and i % 2 != 0:  
+    print(f"tsükkel lõpes paaritu arvu tõttu: {i}.")
+else:
+    print("tsükkel lõpes")
+    print(f"paarisarvude summa on: {summa}.")
+
+
+# Mitmemõõtmelise massiivi kasutamine for-tsükliga
+ev_data = [
+['vehicle', 'range', 'price'],
+['Tesla Model Y Long Range', '330', '58990'],
+['Volkswagen ID.4 Pro', '260', '39995'],
+['Ford Mustang Mach-E', '300', '42995'],
+['Audi e-tron GT', '238', '102700'],
+['Nissan Leaf', '149', '27400'],
+['BMW iX xDrive50', '324', '83995'],
+['Polestar 2', '265', '45500'],
+['Kia EV6 Long Range', '310', '47795'],
+['Mercedes-Benz EQS 450+', '350', '102310'],
+['Hyundai Kona Electric', '258', '37400']
+]
+print(f"{'Vehicle':<30} {'Range (km)':<15} {'Price ($)':<10}")
+for row in ev_data[1:]:
+    vehicle, range_km, price = row
+    print(f"{vehicle:<30} {range_km:<15} {price:<10}")
+
+
+range_list = [int(row[1]) for row in ev_data[1:]]
+price_list = [int(row[2]) for row in ev_data[1:]]
+
+avg_range = sum(range_list) / len(range_list)
+avg_price = sum(price_list) / len(price_list)
+
+print(f"\nKeskmine läbisõidu ulatus: {avg_range:.2f} km")
+print(f"Keskmine hind: ${avg_price:,.2f}")
+
+
+print("\nAutod, mille läbisõidu ulatus on suurem kui 300 km:")
+for row in ev_data[1:]:
+    if int(row[1]) > 300:
+        print(row[0])
+
+
+prices_ranges = [(int(row[2]), int(row[1])) for row in ev_data[1:]]
+prices_ranges.sort()  
+print("\nHinna ja läbisõidu ulatuse paarid:")
+for price, range_km in prices_ranges:
+    print(f"Hind: ${price}, Läbisõidu ulatus: {range_km} km")
