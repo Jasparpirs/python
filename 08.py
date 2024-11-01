@@ -75,7 +75,7 @@ try:
     else:
            print("Meil ei ole sellist kogust!")
 
-    else:
+    try:
     print("Seda toodet ei ole")
 
 
