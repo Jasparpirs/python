@@ -2,7 +2,7 @@ import turtle
 turtle.speed(10)
 #6
 
-"""
+
 for i in range (4):
     turtle.lt(90)
     for i in range(2):
@@ -79,7 +79,7 @@ for i in range(3):
 for i in range(3):
     turtle.lt(120)
     turtle.fd(50)
-"""
+
 
 
   
