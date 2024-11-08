@@ -2,14 +2,18 @@ import turtle
 turtle.speed(10)
 #6
 
+p=120
 
 for i in range (4):
     turtle.lt(90)
     for i in range(2):
-        turtle.fd(120)
+        turtle.fd(p)
         turtle.left(90)
-        turtle.fd(120/2)
+        turtle.fd(p/2)
         turtle.left(90)
+
+
+
 
 #12
 turtle.penup()
