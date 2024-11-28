@@ -49,7 +49,7 @@ print(sarnased_esitahed('Lahe Känguru'))
 # [Joonistab 5 kujundit, igaüks juhuslikult valitud tüübiga suvalistesse kohtadesse]
 # Pärast joonistamist peaks programm pakkuma võimalust sisestada uued väärtused või väljuda programmist, jättes sisendi tühjaks.
 
-print("----------------Joonistame kujundeid----------------")
+print("-------------Joonistame kujundeid-------------")
 print("Vali kujundid: \n1 viisnurk, \n2 ring, \n3 ruut, \n4 suvaline")
 kujundid = int(input("Sisesta number: "))
 arv = int(input("Mitu kujundit tahad(1-100): "))

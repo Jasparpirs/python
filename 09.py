@@ -142,30 +142,3 @@ ev_data = [
 ['Mercedes-Benz EQS 450+', '350', '102310'],
 ['Hyundai Kona Electric', '258', '37400']
 ]
-print(f"{'Vehicle':<30} {'Range (km)':<15} {'Price ($)':<10}")
-for row in ev_data[1:]:
-    vehicle, range_km, price = row
-    print(f"{vehicle:<30} {range_km:<15} {price:<10}")
-
-
-range_list = [int(row[1]) for row in ev_data[1:]]
-price_list = [int(row[2]) for row in ev_data[1:]]
-
-avg_range = sum(range_list) / len(range_list)
-avg_price = sum(price_list) / len(price_list)
-
-print(f"\nKeskmine läbisõidu ulatus: {avg_range:.2f} km")
-print(f"Keskmine hind: ${avg_price:,.2f}")
-
-
-print("\nAutod, mille läbisõidu ulatus on suurem kui 300 km:")
-for row in ev_data[1:]:
-    if int(row[1]) > 300:
-        print(row[0])
-
-
-prices_ranges = [(int(row[2]), int(row[1])) for row in ev_data[1:]]
-prices_ranges.sort()  
-print("\nHinna ja läbisõidu ulatuse paarid:")
-for price, range_km in prices_ranges:
-    print(f"Hind: ${price}, Läbisõidu ulatus: {range_km} km")

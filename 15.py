@@ -77,6 +77,10 @@ def kokkuporge():
     global skoor
     global kiirus
     skoor+=1
+    turtle.goto(-250, 250)
+    turtle.hideturtle()
+    turtle.clear()
+    turtle.write(skoor, font=("Arial"))
     kiirus+=1
     print(f"skoor: {skoor}")
 

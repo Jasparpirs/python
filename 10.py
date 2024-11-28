@@ -1,6 +1,6 @@
 #Jaspar Pirs 8.11.24
 #Harjutus10
-
+import random
 # Arvude keskmine
 # Koostage Pythoni programm, mis küsib kasutajalt arve ükshaaval. Programm peaks jätkama arvude küsimist ja nende vastuvõtmist seni, kuni kasutaja jätab sisestuse tühjaks (st vajutab sisestusklahvi ilma midagi kirjutamata).
 # Programm peab kasutama while-tsüklit arvude küsimiseks ja nende salvestamiseks.
@@ -14,13 +14,23 @@
 # Kui kasutaja otsustab mitte jätkata, tänab programm kasutajat mängus osalemise eest ja kuvab kõik senised tulemused: mitmenda katsega igal korral õige arv ära arvati.
 # Programm peab kasutama while-tsüklit nii arvude sisestamise protsessi juhtimiseks kui ka mängu kordamise otsustamiseks.
 
-arvud = []
 
+tulemused = []
+katsed = 0
 loop = 1
-
+arv = random.randint(1,10)
+print(arv)
 while loop==1:
-    arv = int(input("Sisesta arv: "))
-    arvud.append(arv)
+    katsed+=1
+    vastus = int(input("Arva ära arv 1-10: "))
+    if vastus==arv:
+        print("Õige")
+        uuesti = input("kas soovid vvel (j/e:) ")
+        if uuesti == "j":
+            katsed = 0
+        else:
+            break
+else:
+    print("proovi uuesti")
 
-
-print(arvud)
+    print(f"Arvasid {katsed} korda")
