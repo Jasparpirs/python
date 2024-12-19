@@ -23,7 +23,7 @@ import random
 
 #4
 inimese_antud_arv = int(input("Sisesta arv"))
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]; x = [i for i in a if i <{inimese_antud_arv}; print(x)
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]; x = [i for i in a if i <{inimese_antud_arv}]; print(x)
 
 
 
