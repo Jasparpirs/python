@@ -1,0 +1,136 @@
+1. Korrutamise kontrollimine
+	programm esitab korrutustehte 1p
+	ootab kasutajalt vastuse sisestamist 1p
+	kontrollib vastuse õigsust 1p
+	väljastab, kas vastus oli õige või väär. 1p
+	kokku antakse lahendamiseks 10 ülesannet. 1p
+	
+2. Vanused
+	loo vanuste loend 1p
+	leia numbrite suurim ja väikseim arv  1p
+	kogusumma  1p
+	keskmine 1p
+	
+3. Positiivsed ja negatiivsed
+	tee kaks loendit positiivsete ja negatiivsete arvude hoidmiseks 1p
+	kasutaja sisestab 5 arvu ja programm tuvastab, kumba loendisse selle lisab 2p
+	nulli lisamisel ei tehta midagi 1p
+	väljasta mõlemad loendit 1p
+	
+4. List Less Than Ten
+	Take a list and write a program that prints out all the elements of the list that are less than 5. 1p
+		a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+	Instead of printing the elements one by one, make a new list that has all the elements less than 5 from this list in it and print out this new list. 1p
+	Write this in one line of Python. 1p
+	Ask the user for a number and return a list that contains only elements from the original list a that are smaller than that number given by the user. 1p
+	
+5. Shopping List
+	Create a program that will keep track of items for a shopping list. The program should keep asking for new items until nothing is entered (no input followed by enter/return key). The program should then display the full shopping list.
+
+6. Koosta programm, mis kontrollib, kas kasutaja poolt sisestatud arv on paaris või paaritu
+	kuvatakse korrektne arusaadav küsimus ja vastus - 1p
+	eelnev kontroll, kas kasutaja ei lisanud arvu või pani nulli - 1p
+	kood mis teavitab paaris või paaritust arvust - 1p
+	kuvatakse programmi pealkiri - 1p
+	kood kommenteeritud - 1p
+	
+7. Eurokalkulaator - koosta programm, mis kalkuleerib valuuta vastavalt kasutaja soovile EUR->EEK või EEK->EUR.
+	kuvatakse korrektne arusaadav küsimus ja vastus - 1p
+	kuvatakse veateade, kui kasutaja tegi valiku valesti - 1p
+	küsitakse valuuta kogust ja tehakse arvutused - 2p
+	kood kommenteeritud - 1p
+	
+8. Täringud
+	kuvatakse korrektne arusaadav küsimus ja hiljem vastus - 1p
+	kasutaja võistleb kahe täringuga arvuti vastu - 1p
+	kasutaja teeb pakkumise ning suurima täringupunktisumma võitja saab laual oleva raha endale - 2p
+	kood kommenteeritud - 1p
+	
+9. Emaili kontroll
+	kasutaja lisab emaili kujul enimi.pnimi@server.com - 1p
+	programm kontrollib kas email on sisestatud õigesti - vähemalt @-märgi kontroll - 1p
+	programm tükeldab selle ja väljastab lause: ‘Tere enimi, sinu email on server serveris ja domeeniks on sul com’ - 1p
+	kasutajalt küsitud küsimused on selgelt üheselt mõistetavad - 1p
+	kood kommenteeritud - 1p
+	
+10. Kaugushüpe
+	kasutaja sisestab 3 kaugushüppe tulemust - 1p
+	sinu programm leiab ning väljastab parima ja keskmise tulemuse - 2p
+	programmi dialoog kasutajaga on arusaadav ja üheselt mõistetav - 1p
+	kood kommenteeritud - 1p
+	
+11. Salakeel
+	sinu programm küsib kasutajalt, kas ta soovib salakeelt luua või tõlkida - 1p
+	kasutaja sisestab tavalise sõna, mis muudetakse salakeeleks - 1p
+	kasutaja sisestab salakeeles sõna, mis teisendatakse jälle normaalseks - 1p
+	kood kommenteeritud - 1p
+	
+12. Eurokalkulaator
+	Koosta programm, mis kalkuleerib valuuta vastavalt kasutaja soovile EUR->EEK või EEK->EUR.
+	Oluline on kasutada kahte funktsiooni!!
+	
+13. Koosta programm, mis kontrollib, kas kasutaja poolt sisestatud arv on paaris või paaritu
+	kuvatakse korrektne arusaadav küsimus ja  vastus - 1p
+	eelnev kontroll, kas kasutaja ei lisanud arvu või pani nulli - 2p
+	kood mis teavitab paaris või paaritust arvust - 2p
+	kuvatakse programmi pealkiri - 1p
+
+14. Palkade võrdlus - Loo palk.txt fail töötajate nime, soo ja palganumbriga (10 töötajat).
+	Koosta programm, mis analüüsib kas firmas toimub diskrimineerimist soo järgi. Selleks võrdle omavahel meeste ja naiste palkade keskmiseid, samuti meeste ja naiste kõige kõrgemat palka. Programm peab tegema otsuse.
+
+	Hubert Hunt m 2340
+	Siim Siil m 2570
+	Märt Mäger m 1960
+	Vilma Vihmauss n 2060
+	Merike Metskits n 2250
+	Kati Karu n 2370
+	Elmar Elevant m 2900
+	Timoteus Tigu m 2850
+	Reet Rebane n 2340
+	Kalev Kaamel m 2570
+	Karmen Kass n 2120
+	Kornelius Koer m 2250
+
+15. Temperatuurid - Programm peab töötlema ühe aasta kõigi päevade temperatuure. Kirjutada programm, mis leiab kuude kaupa, mitmendal kuupäeval oli kõige soojem. Väljasta kuupäev ja vastav temperatuur. (Kui sama temperatuuriga oli mitu päeva, väljasta vähemalt üks)
+
+	jaanuar -16 -12 -15 -20 0 -1 -20 -2 -20 -14 -18 -8 2 -1 -14 -7 -15 -17 -6 -17 -17 -7 0 3 -20 -17 -15 -8 -12 3
+	veebruar -9 -2 -7 1 -16 -19 -19 -11 -16 -15 -9 -2 -16 -4 -20 -5 -6 -17 -5 0 -16 2 0 -20 -16 -2 -18
+	märts 2 -9 -1 -3 -6 -2 1 -2 -3 -9 -1 -4 0 -6 -7 1 0 2 -5 -10 2 -7 -3 2 -10 2 -9 -8 -5 -2
+	aprill -5 0 10 -9 0 -9 -8 6 -5 3 -1 4 9 -1 2 0 10 0 5 0 -10 0 6 3 -6 -2 -10 -8 -2
+	mai 12 5 8 -1 -2 4 10 -1 7 15 7 3 6 4 10 9 13 6 14 10 14 2 6 12 15 2 14 11 9 1
+	juuni 12 5 17 6 10 14 9 7 15 23 29 11 16 18 9 25 14 8 16 22 19 22 23 18 16 16 26 24 22
+	juuli 15 8 21 28 18 13 9 9 8 6 8 12 12 29 28 20 6 9 12 8 14 18 14 13 23 6 24 24 17 20
+	august 7 6 5 19 18 18 17 20 15 11 7 10 13 12 20 11 10 14 18 14 24 6 17 16 6 17 5 13 11
+	september 21 19 21 9 13 18 6 6 20 7 25 13 8 9 14 16 19 10 7 25 7 17 16 15 17 18 15 9 19
+	oktoober 2 2 1 5 -2 5 5 2 2 2 1 -2 1 -2 0 -2 5 4 0 1 -1 2 0 2 2 2 -1 1 4 -1
+	november -6 -7 -2 -7 -2 -4 0 -7 -8 -6 0 -9 -2 -3 -2 0 -8 -2 -5 -2 -5 -8 -10 0 -2 -9 -9 -7 -1
+	detsember -15 2 -11 -14 -15 -5 -5 -18 -18 -19 0 0 2 -7 -16 -7 -4 -1 -1 -16 -18 -10 -3 -19 -6 -16 -16 -8 -2 -18
+	
+16. Täringud
+	Kasutaja võistleb kahe täringuga arvuti vastu. Kasutaja teeb pakkumise ning suurima täringupunktisumma võitja saab laual oleva raha endale juurde. Mäng kestab kuni kummalgi on raha otsas.
+	(Vihjed: küsi kasutajalt nime, kuva pidevalt konto seisu ja täringuviskeid, kasutajate raha hulga mängu alguses määrad sina)
+
+17. Email
+	Kasutaja lisab emaili kujul enimi.pnimi@server.com
+	Programm kontrollib kas email on sisestatud õigesti
+	Programm tükeldab selle ja väljastab lause: Tere enimi, sinu email on server serveris ja domeeniks on sul com
+	
+
+---------------
+sport.txt
+klass2 23.4
+klass1 15.7
+klass3 19.6
+klass3 20.6
+klass2 22.5
+klass1 23.7
+klass3 19.0
+klass2 28.5
+klass1 23.4
+klass2 15.7
+klass2 21.2
+klass3 23.8
+klass3 18.6
+klass3 21.6
+klass1 22.4
+klass2 16.7

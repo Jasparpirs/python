@@ -3,8 +3,8 @@ def eelarve(kylalised):
     eelarve = kylalised * 10 + 55
     return eelarve
 
-# max_inimesed =int(input("mitu on kutsutud?"))
-# min_inimesed = int(input("mitu inimest tuleb?"))
+max_inimesed =int(input("mitu on kutsutud?"))
+min_inimesed = int(input("mitu inimest tuleb?"))
 
-print(eelarve(max_inimesed =int(input("mitu on kutsutud?"))))
-print(eelarve(min_inimesed = int(input("mitu inimest tuleb?"))))
+print(eelarve(max_inimesed))
+print(eelarve(min_inimesed))
