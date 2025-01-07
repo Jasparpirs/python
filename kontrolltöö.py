@@ -22,15 +22,10 @@ import random
 
 
 #4
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]; x = [i for i in a if i <5]; print(x)
 
-# a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-
-# for i in a:
-#     if i < 5:
-#         print(i)
-
-# x = [i for i in a if i <5] 
-# print(x) 
+inimese_antud_arv = int(input("Sisesta arv: "))
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]; x = [i for i in a if i <{inimese_antud_arv}]; print(x)
 
 
 # #8
@@ -42,22 +37,22 @@ import random
 
 #5
 
-tooted = []
-while asjad := input('Mida poest vaja on ? '):
-    tooted.append(asjad)
-print(tooted)
+# tooted = []
+# while asjad := input('Mida poest vaja on ? '):
+#     tooted.append(asjad)
+# print(tooted)
 
-#3
-positiivsed = []
-negatiivsed = []
+# #3
+# positiivsed = []
+# negatiivsed = []
 
 
-for i in range(5):
-    number = int(input("Sisesta viis numbrit: "))
-    if number > 0:
-        positiivsed.append(number)
-    else: number < 0
-    negatiivsed.append(number)
+# for i in range(5):
+#     number = int(input("Sisesta viis numbrit: "))
+#     if number > 0:
+#         positiivsed.append(number)
+#     else: number < 0
+#     negatiivsed.append(number)
 
-print("Positiivsed numbrid:", positiivsed)
-print("Positiivsed numbrid", positiivsed)
+# print("Positiivsed numbrid:", positiivsed)
+# print("Positiivsed numbrid", positiivsed)
