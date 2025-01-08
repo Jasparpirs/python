@@ -4,13 +4,9 @@
 import json
 
 with open('haridustulemused.json', 'r', encoding='utf-8') as file:
-    books = json.load(file)
+    opilased = json.load(file)
 
-for book in books:
-    nimi = book['nimi']
-    klass = book['klass']
-
-klasside_arv = {10,11,12}
-
-if klasside_arv > 11:
-    print(klass)
+print(opilased[nimi])
+# json_data = '{"name": "John Doe", "klass": 35, "city": "New York"}'
+# klass = extract_key_value(json_data, "klass")
+# print(klass) 
