@@ -17,9 +17,10 @@ for opilane in opilased:
         print(opilane['nimi'])
         for tegevus in opilane['tegevused']:
             print(tegevus)
-        if opilane['klass'] == '11':
+        print("---------------------")
+    if opilane['klass'] == '11':
             kl_11+=1
-        if opilane['klass'] == '10':
+    if opilane['klass'] == '10':
             kl_10+=1
 
 print(f"12. klassis õpib {kl_12}")
