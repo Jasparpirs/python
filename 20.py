@@ -4,9 +4,9 @@ import requests
 import requests
 
 # API võtme ja linna nime määramine
-city = "HaapsAlu"
+city = "Haapsalu"
 api_key = "f4718da5798ba9aea22497d29515b83a"
-url = f"https://api.openweathermap.org/data/2.5/weather?q=HAapsalu&appid=f4718da5798ba9aea22497d29515b83a&units=metric"
+url = f"https://api.openweathermap.org/data/2.5/weather?q=Haapsalu&appid=f4718da5798ba9aea22497d29515b83a&units=metric"
 
 # API päringu tegemine
 response = requests.get(url)
