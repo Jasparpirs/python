@@ -1,22 +1,26 @@
-import json
+
 import requests
-sisesta_otsitav = input("Sisesta nimi: ")
 #jaspar 22.01.2025
 
+otsitav_sona = input("Sisesta sona mida on vaja sul otsida: ")
 # API päringu tegemine
-url = f"https://dummyjson.com/todos/{sisesta_otsitav}"
+url = "https://dummyjson.com/todos"
 response = requests.get(url)
 
 if response.status_code == 200:
-    todos = response.json()
-    print(f"Pealkiri: {todos['todo']}")
-    print(f"Kasutaja ID: {todos['userId']}")
-    print(f"ID: {todos['id']}")
-    print(f"Kas tehtud: {todos['completed']}")
+    todos = response.json()['todos']
+    olemas = False
+    for todo in todos:
+        if otsitav_sona.lower() in todo['todo'].lower():
+            print(f"Pealkiri: {todo['todo']}")
+            print(f"Kasutaja ID: {todo['userId']}")
+            print(f"ID: {todo['id']}")
+            olemas = True
+    if not olemas:
+        print("Sellist asja ei leitud yles.")
 else:
-    print("Ei leitud sellist ID-d")
-   
-    
+    print("Tekkis mingi probleem.")
+
 
 
 
