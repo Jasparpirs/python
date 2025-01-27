@@ -19,6 +19,7 @@ if int(vahe.days/365)%5==0:
 
 
 
+
 # Autorent
 faili_nimi = 'rentals.csv'
 kokku = 0
@@ -45,9 +46,11 @@ with open(faili_nimi, mode='r', encoding='utf-8') as fail:
         if rent[2] != rent[3]:
             mvordsed += 1
         #Keskmine rentimise aeg
-        
+        ajavahe = datetime.strptime(rent[1],"%d/%m/%Y")-datetime.strptime(rent[0], "%d/%m/%Y")
+        rendiajad.append(ajavahe.days)
 
-print(f"Rentimisi kokku: {kokku-1}")
+print(f"Rentimisi kokku: {kokku}")
 print(f"Kliente kokku: {len(kliendid)}")
 print(f"Keskmine vanus: {sum(vanused)/len(vanused):0.1f}")
 print(f"Risti-kontorite rentimiste osakaal: {mvordsed/kokku*100}%")
+print(f"Keskmine rendiaeg: {sum(rendiajad)/len(rendiajad):0.1f}")

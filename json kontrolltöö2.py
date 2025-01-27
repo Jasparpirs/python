@@ -8,11 +8,9 @@ url = "https://dummy-json.mock.beeceptor.com/todos"
 response = requests.get(url)
 
 if response.status_code == 200:
-    todos = response.json()['title']
-    olemas = False
+    todos = response.json()
     for todo in todos:
-        if otsitav_s6na.lower() in todo['title,'].lower():
-                olemas == True
+        if otsitav_s6na in todo['title']:
                 print(f"pealkiri: {todo['title']}")
-                print(f"kasutaja id: {todo['userId']}")
-                print(f"id: {todo['id']}")
+    else:
+        print("ei leitud")
